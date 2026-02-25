@@ -1,0 +1,29 @@
+.statsContainer {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  flex-wrap: wrap;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+.statBox {
+  flex: 1;
+  background: #000000;
+  border: 1px solid #8b5cf6;
+  border-radius: clamp(0.5rem, 2vw, 1rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.statBox:hover { transform: scale(1.03); }
+
+.number {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: bold;
+  color: #8b5cf6;
+}
+
+.numberCompleted { color: #22c55e; font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: bold; }
+.numberPending { color: #f97316; font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: bold; }
+
+.label { font-size: clamp(0.875rem, 1.5vw, 1rem); color: #d1d5db; margin-top: 0.25rem; }

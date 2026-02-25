@@ -1,0 +1,64 @@
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  background: #000000;
+  border: 1px solid #8b5cf6;
+  border-radius: clamp(0.5rem, 2vw, 1rem);
+  padding: clamp(0.5rem, 1vw, 0.75rem);
+  transition: background 0.2s;
+}
+
+.taskItem:hover { background: #111111; }
+
+.completeBtn {
+  width: clamp(1.5rem, 3vw, 2rem);
+  height: clamp(1.5rem, 3vw, 2rem);
+  border: 2px solid #8b5cf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.completed { background: #22c55e; border-color: #22c55e; }
+
+.checkIcon { width: clamp(1rem, 2vw, 1.25rem); height: clamp(1rem, 2vw, 1.25rem); color: white; }
+
+.taskText { flex: 1; color: white; font-size: clamp(0.875rem, 1.5vw, 1rem); }
+
+.completedText { text-decoration: line-through; opacity: 0.5; }
+
+.editInput {
+  flex: 1;
+  padding: clamp(0.25rem, 0.5vw, 0.5rem);
+  background: #111111;
+  border: 1px solid #8b5cf6;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  outline: none;
+}
+
+.actions { display: flex; gap: 0.25rem; }
+
+.editBtn, .deleteBtn, .saveBtn, .cancelBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.25rem, 0.5vw, 0.5rem);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.editBtn { background: #3f3f3f; color: #8b5cf6; }
+.editBtn:hover { transform: scale(1.05); }
+
+.deleteBtn { background: #3f3f3f; color: #f87171; }
+.deleteBtn:hover { transform: scale(1.05); }
+
+.saveBtn { background: #22c55e; color: white; }
+.cancelBtn { background: #f87171; color: white; }

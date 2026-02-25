@@ -1,0 +1,35 @@
+.inputContainer {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.input {
+  flex: 1;
+  padding: clamp(0.75rem, 1.5vw, 1rem);
+  background: #000000;
+  border: 1px solid #8b5cf6;
+  border-radius: clamp(0.5rem, 2vw, 1rem);
+  color: white;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  outline: none;
+}
+
+.input::placeholder { color: #9ca3af; }
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: clamp(0.75rem, 1.5vw, 1rem);
+  background: #8b5cf6;
+  color: white;
+  font-weight: 600;
+  border-radius: clamp(0.5rem, 2vw, 1rem);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.addBtn:hover { transform: scale(1.05); background: #a78bfa; }
+
+.icon { width: clamp(1rem, 2vw, 1.25rem); height: clamp(1rem, 2vw, 1.25rem); }

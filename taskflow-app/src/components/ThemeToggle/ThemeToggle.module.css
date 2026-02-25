@@ -1,0 +1,39 @@
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.label {
+  color: #8b5cf6;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 500;
+}
+
+.toggleBtn {
+  width: clamp(3rem, 6vw, 4rem);
+  height: clamp(1.5rem, 3vw, 2rem);
+  border-radius: 9999px;
+  background: #3f3f3f;
+  border: 1px solid #8b5cf6;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.knob {
+  width: clamp(1.25rem, 2.5vw, 1.5rem);
+  height: clamp(1.25rem, 2.5vw, 1.5rem);
+  background: #8b5cf6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0.125rem;
+  transform: translate(0, -50%);
+  transition: left 0.25s;
+}
+
+.toggleBtn.active .knob {
+  left: calc(100% - clamp(1.25rem, 2.5vw, 1.5rem) - 0.125rem);
+}
