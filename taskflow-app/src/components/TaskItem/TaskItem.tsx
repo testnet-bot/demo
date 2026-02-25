@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Check, X, Trash2, Edit2 } from 'lucide-react';
 import styles from './TaskItem.module.css';

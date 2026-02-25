@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import TaskStats from '../TaskStats/TaskStats';
 import TaskInput from '../TaskInput/TaskInput';
